@@ -1,0 +1,16 @@
+- name: Gorani Reader
+  year: 2017-2020
+  desc: eBook reader that can reocommend books by personalized vocabulary database that is traced through mathmatical model
+  tags:
+    - mobile
+    - web
+    - server
+    - data
+    - science
+    
+- name: Minda
+  year: 2018-2019
+  desc: Online multiplayer Abalone
+  tags:
+    - server
+    - business

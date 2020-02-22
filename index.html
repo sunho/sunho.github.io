@@ -1,0 +1,30 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+<div class="w-full mt-8">
+    <div>Hello, my name is Sunho Kim.</div>
+</div>
+<div class="md:flex md:flex-wrap mt-8">
+    <div class="flex max-w-full md:w-1/2 flex-col justify-center ">
+        <p class="mb-4 text-xl font-bold text-gray-700">
+            PROJECTS
+        </p>
+        {% for project in site.data.projects %}
+            <div class="w-full rounded shadow-lg p-6 mb-8">
+            <p class="mb-2">
+                <span class="font-medium text-xl mr-1">{{ project.name }}</span>
+                <span class="text-gray-700 text-sm">{{ project.year }}</span>
+            </p>
+            <p class="text-gray-700 text-base">{{ project.desc }}</p>
+            <div class="mt-4">
+                {% for tag in project.tags %}
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>{{tag}}</span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
