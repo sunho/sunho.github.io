@@ -1,10 +1,46 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Sunho Kim" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Sunho Kim | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Sunho Kim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="/" />
+<meta property="og:url" content="/" />
+<meta property="og:site_name" content="Sunho Kim" />
+<script type="application/ld+json">
+{"url":"/","headline":"Sunho Kim","name":"Sunho Kim","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-layout: default
----
-<div class="w-full mt-8">
+    <link rel="stylesheet" href="/css/site.css">
+  </head>
+  <html>
+    <body>
+      <nav class="bg-purple-500 p-3">
+          <div class="container flex items-center justify-between flex-wrap">
+
+        
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="text-xl tracking-tight"> Sunho Kim</span>
+        </div>
+        <div class="block flex-grow flex items-center w-auto">
+            <div class="text-sm flex-grow">
+              <a href="#responsive-header" class="inline-block text-purple-200 hover:text-white mr-4">
+                Home
+              </a>
+              <a href="#responsive-header" class="inline-block text-purple-200 hover:text-white">
+                Blog
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="container mt-3">
+        <div class="w-full mt-8">
     <div>Hello, my name is Sunho Kim.</div>
 </div>
 <div class="md:flex md:flex-wrap mt-8">
@@ -12,19 +48,47 @@ layout: default
         <p class="mb-4 text-xl font-bold text-gray-700">
             PROJECTS
         </p>
-        {% for project in site.data.projects %}
+        
             <div class="w-full rounded shadow-lg p-6 mb-8">
             <p class="mb-2">
-                <span class="font-medium text-xl mr-1">{{ project.name }}</span>
-                <span class="text-gray-700 text-sm">{{ project.year }}</span>
+                <span class="font-medium text-xl mr-1">Gorani Reader</span>
+                <span class="text-gray-700 text-sm">2017-2020</span>
             </p>
-            <p class="text-gray-700 text-base">{{ project.desc }}</p>
+            <p class="text-gray-700 text-base">eBook reader that can reocommend books by personalized vocabulary database that is traced through mathmatical model</p>
             <div class="mt-4">
-                {% for tag in project.tags %}
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>{{tag}}</span>
-                {% endfor %}
+                
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>mobile</span>
+                
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>web</span>
+                
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>server</span>
+                
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>data</span>
+                
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>science</span>
+                
             </div>
         </div>
-        {% endfor %}
+        
+            <div class="w-full rounded shadow-lg p-6 mb-8">
+            <p class="mb-2">
+                <span class="font-medium text-xl mr-1">Minda</span>
+                <span class="text-gray-700 text-sm">2018-2019</span>
+            </p>
+            <p class="text-gray-700 text-base">Online multiplayer Abalone</p>
+            <div class="mt-4">
+                
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>server</span>
+                
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>business</span>
+                
+            </div>
+        </div>
+        
     </div>
 </div>
+
+      </main>
+      
+    </body>
+  </html>
