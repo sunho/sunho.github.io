@@ -13,7 +13,11 @@ layout: default
             PROJECTS
         </p>
         {% for project in site.data.projects %}
-            <div class="w-full rounded shadow-lg p-6 mb-8">
+           
+            <div class="w-full rounded shadow-lg mb-8 lg:flex">
+                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{project.img}}')" title="Woman holding a mug">
+                </div>
+                <div class="leading-normal p-6">
             <p class="mb-2">
                 <span class="font-medium text-xl mr-1">{{ project.name }}</span>
                 <span class="text-gray-700 text-sm">{{ project.year }}</span>
@@ -24,6 +28,7 @@ layout: default
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>{{tag}}</span>
                 {% endfor %}
             </div>
+        </div>
         </div>
         {% endfor %}
     </div>
