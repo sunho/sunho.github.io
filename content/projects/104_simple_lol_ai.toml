@@ -1,0 +1,5 @@
+Name="Simple LOL AI"
+Year="2017"
+Desc="Comparison of Finite State Machine and Deep Q Network in a replica of League of Legends, famous role-playing game"
+Img="simple.png"
+Tags=["game", "ML", "RL"]

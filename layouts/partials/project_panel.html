@@ -1,0 +1,20 @@
+{{ $p := . }}
+{{ range .Resources.ByType "toml"}}
+    {{ with .Content | unmarshal }}
+    <div class="w-full rounded shadow-lg mb-8 lg:flex">
+        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('{{ with $p.Resources.GetMatch .Img }}{{.RelPermalink}}{{ end }}')" title="Woman holding a mug"></div>
+        <div class="leading-normal p-6">
+            <p class="mb-2">
+                <span class="font-medium text-xl mr-1">{{ .Name }}</span>
+                <span class="text-gray-700 text-sm">{{ .Year }}</span>
+            </p>
+            <p class="text-gray-700 text-base">{{ .Desc }}</p>
+            <div class="mt-4">
+                {{ range .Tags }}
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"><span>#</span>{{ . }}</span>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{ end }}     
+{{ end }}

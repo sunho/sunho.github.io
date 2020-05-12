@@ -1,0 +1,5 @@
+Name="KMOR"
+Year="2020"
+Desc="Python implementation of k-means clustering with outlier removal from the paper written by Guojun Gan et al"
+Img=""
+Tags=["data analysis", "ML", "clustering", "anomality detection"]
