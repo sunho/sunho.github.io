@@ -1,0 +1,5 @@
+Name="Minda"
+Year="2018-2019"
+Desc="Online multiplayer board game"
+Img="minda.jpg"
+Tags=["server", "distributed", "rust"]

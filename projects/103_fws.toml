@@ -1,0 +1,5 @@
+Name="FWS"
+Year="2018"
+Desc="Minimal PaaS which supports CI and CD"
+Img="fws.png"
+Tags=["web", "server", "kubernetes", "cloud"]
