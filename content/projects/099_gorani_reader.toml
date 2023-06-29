@@ -1,5 +1,0 @@
-Name="Gorani Reader"
-Year="2017-2020"
-Desc="E-Book reader that can reocommend books by personalized vocabulary database that is traced through mathmatical model"
-Img="gorani.png"
-Tags=["web", "server", "data analysis", "ETL", "ML", "knowledge tracing"]

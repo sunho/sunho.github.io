@@ -1,5 +1,0 @@
-Name="Venda"
-Year="2020"
-Desc="Online multiplayer real-time pvp game"
-Img="venda.png"
-Tags=["server", "udp protocol", "grpc"]
