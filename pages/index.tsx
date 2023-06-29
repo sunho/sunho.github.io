@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <div className="text-2xl font-bold">
-      CS Undergrad @ UCSD <Image width={25} height={25} src="/trident.png" className="inline-block mb-2"/>
+      CS Undergrad @ UCSD <Image  alt="" width={25} height={25} src="/trident.png" className="inline-block mb-2"/>
       </div>
       <div className="mt-5 text-2xl">
         GLSL Shaders
@@ -71,6 +71,7 @@ export default function Home() {
             <div className="inline-block h-40 w-60 m-2">
               <div className="relative h-full -z-10">
                 <Image
+                 alt=""
                     src={x.img}
                     // fill={true}
                     layout="fill"
@@ -96,6 +97,7 @@ export default function Home() {
               <div className="flex-shrink-0 inline-block h-[80px] w-[80px]">
                   <div className="relative h-full -z-10">
                     <Image
+                      alt=""
                         src={x.image}
                         // fill={true}
                         layout="fill"
