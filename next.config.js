@@ -18,9 +18,8 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
   reactStrictMode: true,
   images: {
-    loader: 'akamai',
-    path: '',
-  },
+    unoptimized: true
+  }
 }
  
 // Merge MDX config with Next.js config
