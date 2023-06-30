@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { GoLink } from "react-icons/go";
 import { AiOutlineYoutube, AiFillYoutube } from 'react-icons/ai'
 import { TbTrident } from "react-icons/tb";
+import { AiFillFilePdf, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 export default function Home() {
   const shader_names = ["water", "cloudy4", "spider_web"]
@@ -27,7 +28,7 @@ export default function Home() {
     {
       image: '/projects/spectral.jpg',
       title: "GPUSpectral",
-      desc: "Vulkan monte-carlo ray-tracing renderer built from scratch.",
+      desc: "Vulkan monte-carlo ray-tracing renderer.",
       link: "https://github.com/sunho/GPUSpectral"
     },
     {
@@ -39,13 +40,13 @@ export default function Home() {
     {
       image: '/projects/aheui.png',
       title: "AheuiJIT",
-      desc: "JIT compiler for Aheui language built from scratch.",
+      desc: "JIT compiler for Aheui language for PC and Web.",
       link: "https://github.com/sunho/AheuiJIT.git"
     }
   ]
   const talks = [
     {
-      title: 'Building Programming Language Infrastructure With LLVM Components',
+      title: 'Building PL Infrastructure With LLVM Components',
       place: '2023 ACM SIGPLAN Conference on PLDI',
       link: 'https://pldi23.sigplan.org/details/pldi-2023-tutorials/2/Building-Programming-Language-Infrastructure-With-LLVM-Components',
       youtube: false,
@@ -59,16 +60,16 @@ export default function Home() {
   ]
   return (
     <>
-      <div className="text-2xl font-bold">
+      <div className="text-lg font-medium">
       CS Undergrad @ UCSD <Image  alt="" width={25} height={25} src="/trident.png" className="inline-block mb-2"/>
       </div>
-      <div className="mt-5 text-2xl">
+      <div className="mt-3 sm:mt-5 text-2xl">
         GLSL Shaders
       </div>
       <div className="">{
         shadres.map(x => (
           <Link href={`/shaders/${x.name}`}>
-            <div className="inline-block h-40 w-60 m-2">
+            <div className="inline-block w-[180px] h-[140px] sm:p-0 sm:h-40 sm:w-60 m-2">
               <div className="relative h-full -z-10">
                 <Image
                  alt=""
@@ -84,11 +85,10 @@ export default function Home() {
         ))
       }
       </div>
-      <div className="mt-5 flex justify-between items-center">
+      <div className="mt-3 sm:mt-5 flex justify-between items-center">
         <div className="text-2xl inline-block">
-        Projects
+          Projects
         </div>
-      
       </div>
       {
         projects.map(x => (
@@ -126,7 +126,7 @@ export default function Home() {
         ))
       }
       {/* <div className="inline-block text-1xl ml-3 underline">more</div> */}
-      <div className="text-2xl mt-5">
+      <div className="text-2xl mt-3 sm:mt-5">
         Talks
       </div>
       {
@@ -152,7 +152,7 @@ export default function Home() {
           </div>
         ))
       } 
-      <div className="text-2xl mt-5">
+      <div className="text-2xl mt-3 sm:mt-5">
         Algorithms
       </div>
       <a href="https://codeforces.com/profile/sunho">

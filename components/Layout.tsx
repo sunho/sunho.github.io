@@ -13,15 +13,26 @@ export default function RootLayout({
   isBlog: boolean
 }) {
   return (
-    <div className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 xl:px-0">
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
+        <header className="sm:flex sm:items-center sm:justify-between py-2 sm:py-5">
           <Link href="/">
             <h1 className="text-3xl font-extrabold">
             Sunho Kim
             </h1>
           </Link>
-          <div className="flex items-center text-base leading-5">
+          <div className="p-1 block sm:hidden">
+            <a className="pr-4 text-xl text-blue-500" href="/cv.pdf">
+              Resume <AiFillFilePdf className="inline-block"/>
+            </a>
+            <a className="pr-4 text-xl text-black-500" href="https://github.com/sunho">
+              Github <AiFillGithub className="inline-block"/>
+            </a>
+            <a className="pr-4 text-xl text-black-500" href="https://www.linkedin.com/in/sunho-kim-921886275/">
+              LinkedIn  <AiFillLinkedin className="inline-block"/>
+            </a>
+          </div>
+          <div className="flex items-center text-base leading-5 hidden sm:block">
             <div className="block">
               <a className="p-2 font-medium text-blue-500" href="/cv.pdf">
                 Resume <AiFillFilePdf className="inline-block"/>
@@ -35,7 +46,7 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-        <main className={"mb-auto " + (isBlog ? "prose" : "")}>
+        <main className={"mb-auto " + (isBlog ? "prose dark:prose-invert" : "")}>
           {children}
         </main>
       </div>
