@@ -42,6 +42,18 @@ export default function Home() {
       title: "AheuiJIT",
       desc: "JIT compiler for Aheui language for PC and Web.",
       link: "https://github.com/sunho/AheuiJIT.git"
+    },
+    {
+      image: '/projects/block.png',
+      title: "Scratch Blocks",
+      desc: "Learn C intereactively by block coding UI",
+      link: "https://sunho.io/scratchblock/"
+    },
+    {
+      image: '/projects/gorani.png',
+      title: "Gorani Reader",
+      desc: "ML based e-book leraning platform",
+      link: "https://gorani-reader-249509.web.app/"
     }
   ]
   const talks = [
@@ -94,7 +106,7 @@ export default function Home() {
         projects.map(x => (
             <div className="mx-3 mb-2">
               <div className="flex items-center">
-              <div className="flex-shrink-0 inline-block h-[80px] w-[80px]">
+              <div className="flex-shrink-0 inline-block h-[65px] w-[65px]">
                   <div className="relative h-full -z-10">
                     <Image
                       alt=""
