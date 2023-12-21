@@ -167,7 +167,7 @@ export default function Home() {
       <div className="text-2xl mt-3 sm:mt-5">
         Algorithms
       </div>
-      <a href="https://codeforces.com/profile/sunho">
+      <a href="https://codeforces.com/profile/mathneko">
         <div className="text-blue-600 border-2 rounded-lg border-blue-600 font-bold p-1 m-2 inline-block">
           expert @ codeforces
         </div>
