@@ -28,9 +28,9 @@ export default function RootLayout({
             <a className="pr-4 text-xl text-black-500" href="https://github.com/sunho">
               Github <AiFillGithub className="inline-block"/>
             </a>
-            <a className="pr-4 text-xl text-black-500" href="https://www.linkedin.com/in/sunho-kim-921886275/">
-              LinkedIn  <AiFillLinkedin className="inline-block"/>
-            </a>
+            {/* <a className="pr-4 text-xl text-black-500" href="https://www.linkedin.com/in/sunho-kim-921886275/"> */}
+            {/*   LinkedIn  <AiFillLinkedin className="inline-block"/> */}
+            {/* </a> */}
           </div>
           <div className="flex items-center text-base leading-5 hidden sm:block">
             <div className="block">
