@@ -34,15 +34,15 @@ export default function RootLayout({
           </div>
           <div className="flex items-center text-base leading-5 hidden sm:block">
             <div className="block">
-              <a className="p-2 font-medium text-blue-500" href="/cv.pdf">
+              <a className="p-2 font-medium text-blue-500" href="/resume.pdf">
                 Resume <AiFillFilePdf className="inline-block"/>
               </a>
               <a className="p-2 font-medium text-black-500" href="https://github.com/sunho">
                 Github <AiFillGithub className="inline-block"/>
               </a>
-              <a className="p-2 font-medium text-black-500" href="https://www.linkedin.com/in/sunho-kim-921886275/">
-                LinkedIn  <AiFillLinkedin className="inline-block"/>
-              </a>
+              {/* <a className="p-2 font-medium text-black-500" href="https://www.linkedin.com/in/sunho-kim-921886275/"> */}
+              {/*   LinkedIn  <AiFillLinkedin className="inline-block"/> */}
+              {/* </a> */}
             </div>
           </div>
         </header>
