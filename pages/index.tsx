@@ -168,8 +168,8 @@ export default function Home() {
         Algorithms
       </div>
       <a href="https://codeforces.com/profile/mathneko">
-        <div className="text-blue-600 border-2 rounded-lg border-blue-600 font-bold p-1 m-2 inline-block">
-          expert @ codeforces
+        <div className="text-blue-600 border-2 rounded-lg border-purple-600 font-bold p-1 m-2 inline-block">
+          candidate master @ codeforces
         </div>
       </a>
       {/* <a href="https://atcoder.jp/users/sunho">
@@ -178,8 +178,8 @@ export default function Home() {
         </div>
       </a> */}
       <a href="https://solved.ac/en/profile/sunho">
-      <div className="text-green-400 border-2 rounded-lg border-green-400 font-bold p-1 m-2 inline-block">
-          platinum II @ solved.ac
+      <div className="text-green-400 border-2 rounded-lg border-sky-400 font-bold p-1 m-2 inline-block">
+          diamond IV @ solved.ac
         </div>
       </a>
       <div className='h-40'></div>

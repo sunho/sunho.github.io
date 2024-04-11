@@ -22,7 +22,7 @@ export default function RootLayout({
             </h1>
           </Link>
           <div className="p-1 block sm:hidden">
-            <a className="pr-4 text-xl text-blue-500" href="/cv.pdf">
+            <a className="pr-4 text-xl text-blue-500" href="/resume.pdf">
               Resume <AiFillFilePdf className="inline-block"/>
             </a>
             <a className="pr-4 text-xl text-black-500" href="https://github.com/sunho">
