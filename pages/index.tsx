@@ -75,9 +75,6 @@ export default function Home() {
       <div className="text-lg font-medium">
       CS Undergrad @ UCSD <Image  alt="" width={25} height={25} src="/trident.png" className="inline-block mb-2"/>
       </div>
-      <div className="text-lg font-medium">
-         한국어 포트폴리오: <a href="https://sunho.io/WebPortfolio.pdf" className="text-sky-500">portfolio.pdf</a>
-      </div>
       <div className="mt-3 sm:mt-5 text-2xl">
         GLSL Shaders
       </div>
